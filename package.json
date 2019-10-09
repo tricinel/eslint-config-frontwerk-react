@@ -1,0 +1,63 @@
+{
+  "name": "eslint-config-frontwerk-react",
+  "version": "1.0.0",
+  "description": "ESLint config for Frontwerk with React",
+  "main": "index.js",
+  "scripts": {
+    "prelint": "eclint check * rules/* plugins/*",
+    "lint": "eslint --report-unused-disable-directives rules/*.js",
+    "format": "prettier --write \"./rules/*.js\" \"./plugins/*.js\" \"./index.js\"",
+    "prepublishOnly": "eslint-find-rules --unused",
+    "test": "jest"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tricinel/eslint-config-frontwerk-react.git"
+  },
+  "keywords": [
+    "frontend",
+    "starter",
+    "config",
+    "frontwerk",
+    "javascript"
+  ],
+  "author": "Bogdan Lazar <bogdan@bogdanlazar.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tricinel/eslint-config-frontwerk-react/issues"
+  },
+  "homepage": "https://github.com/tricinel/eslint-config-frontwerk-react",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "husky": "^3.0.7",
+    "jest": "^24.9.0",
+    "jest-watch-typeahead": "^0.3.1",
+    "lint-staged": "^9.4.1",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "eslint-config-frontwerk": "^1.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
