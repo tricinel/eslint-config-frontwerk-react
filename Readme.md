@@ -1,4 +1,4 @@
-# eslint-config-frontwerk
+# eslint-config-frontwerk-react
 
 ![Node Version][node-version-badge] ![Npm version][npm-version-badge]
 [![Npm downloads][npm-downloads-badge]][npm-downloads-badge] ![License][license-badge]
