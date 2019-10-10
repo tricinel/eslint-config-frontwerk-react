@@ -62,6 +62,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
     'react/jsx-indent': ['error', 2],
 
+    // Require 2 spaces for JSX props indentation
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
+    'react/jsx-indent-props': ['error', 2],
+
     // Check for the "key" prop in JSX when using array or other iterable
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
     'react/jsx-key': 'error',
@@ -164,6 +168,10 @@ module.exports = {
         beforeClosing: 'never'
       }
     ],
+
+    // Prevent React to be incorrectly marked as unused
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
+    'react/jsx-uses-react': 'error',
 
     // Disallow unused variables inside of JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md

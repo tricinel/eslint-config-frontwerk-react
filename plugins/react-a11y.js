@@ -151,6 +151,22 @@ module.exports = {
       }
     ],
 
+    // Disallow adding event handlers to non-interactive elements
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      'error',
+      {
+        handlers: [
+          'onClick',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp'
+        ]
+      }
+    ],
+
     // Disallow using ARIA roles to convert a non-interactive element to interactive
     // Basically the inverse of no-interactive-element-to-noninteractive-role
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-to-interactive-role.md
