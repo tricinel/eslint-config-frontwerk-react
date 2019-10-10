@@ -6,10 +6,16 @@
   "scripts": {
     "prelint": "eclint check * rules/* plugins/*",
     "lint": "eslint --report-unused-disable-directives rules/*.js",
-    "format": "prettier --write \"./rules/*.js\" \"./plugins/*.js\" \"./index.js\"",
+    "format": "prettier --write \"./rules/*.js\" \"./plugins/*.js\" \"./index.js\" \"./typescript.js\"",
     "prepublishOnly": "eslint-find-rules --unused",
     "test": "jest"
   },
+  "files": [
+    "index.js",
+    "typescript.js",
+    "rules",
+    "plugins"
+  ],
   "eslintIgnore": [
     "node_modules",
     "dist"
@@ -19,11 +25,19 @@
     "url": "git@github.com:tricinel/eslint-config-frontwerk-react.git"
   },
   "keywords": [
-    "frontend",
-    "starter",
+    "eslint",
+    "eslintconfig",
     "config",
     "frontwerk",
-    "javascript"
+    "javascript",
+    "typescript",
+    "styleguide",
+    "es2015",
+    "es2016",
+    "es2017",
+    "es2018",
+    "react",
+    "accessibility"
   ],
   "author": "Bogdan Lazar <bogdan@bogdanlazar.com>",
   "license": "MIT",
