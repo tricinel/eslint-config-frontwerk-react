@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/tricinel/eslint-config-frontwerk-react",
   "devDependencies": {
+    "eclint": "^2.8.1",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
