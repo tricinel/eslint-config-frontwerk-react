@@ -58,6 +58,16 @@ module.exports = {
       }
     ],
 
+    // Enforce arrow functions for named components and function expressions for unnamed components
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'function-expression'
+      }
+    ],
+
     // Disallow using another component's prop types unless they are explicitly imported/exported
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
     'react/forbid-foreign-prop-types': 'error',
@@ -65,6 +75,10 @@ module.exports = {
     // Disallow using this.state within this.setState
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
     'react/no-access-state-in-setstate': 'error',
+
+    // Prevent adjacent inline elements not separated by whitespace because they will bump into each other if styles are missing
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md
+    'react/no-adjacent-inline-elements': 'warn',
 
     // Disallow using an Array index for the element key, e.g. in a map
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md

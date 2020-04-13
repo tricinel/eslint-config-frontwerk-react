@@ -106,6 +106,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
     'react/jsx-no-literals': 'off',
 
+    // Prevent usage of javascript: URLs
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
+    'react/jsx-no-script-url': 'warn',
+
     // Require "rel='noreferrer noopener'" when using "target='_blank'"
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
