@@ -1,3 +1,10 @@
+### v1.1.0
+
+---
+
+- Add new rules: jsx-a11y/autocomplete-valid
+- Upgrade dependencies
+
 ### v1.0.2
 
 ---

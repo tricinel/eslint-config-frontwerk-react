@@ -245,6 +245,17 @@ module.exports = {
 
     // Warn when using a positive tabindex property
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
-    'jsx-a11y/tabindex-no-positive': 'warn'
+    'jsx-a11y/tabindex-no-positive': 'warn',
+
+    // Warn when the autocomplete attribute is not correct or suitable for the input field it is used with
+    // Developers should the allowed list of components that should be considered input fields
+    // e.g. `"inputComponents": ["Input", "FormField"]`
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/autocomplete-valid.md
+    'jsx-a11y/autocomplete-valid': [
+      'warn',
+      {
+        inputComponents: []
+      }
+    ]
   }
 };
