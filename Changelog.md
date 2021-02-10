@@ -1,3 +1,10 @@
+### v1.1.1
+
+---
+
+- Add new rules: `jsx-newline` and `jsx-no-constructed-context-values`
+- Upgrade dependencies
+
 ### v1.1.0
 
 ---

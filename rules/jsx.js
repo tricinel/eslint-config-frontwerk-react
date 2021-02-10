@@ -81,6 +81,10 @@ module.exports = {
       { maximum: 1, when: 'multiline' }
     ],
 
+    // Don't require a new line after jsx elements and expressions
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-newline.md
+    'react/jsx-newline': 'off',
+
     // Disallow "bind()" in JSX props, but allow refs, arrow functions and native DOM elements
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': [
@@ -97,6 +101,10 @@ module.exports = {
     // Disallow comment strings from being injected as text nodes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'error',
+
+    // Disallow using non-stable values in Context.Provider
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-constructed-context-values.md
+    'react/jsx-no-constructed-context-values': 'error',
 
     // Disallow creating JSX elements with duplicate props
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
